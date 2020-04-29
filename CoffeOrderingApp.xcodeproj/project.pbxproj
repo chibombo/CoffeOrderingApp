@@ -15,6 +15,13 @@
 		BF0F3648245A061400C9E797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3646245A061400C9E797 /* LaunchScreen.storyboard */; };
 		BF0F3653245A061400C9E797 /* CoffeOrderingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3652245A061400C9E797 /* CoffeOrderingAppTests.swift */; };
 		BF0F365E245A061400C9E797 /* CoffeOrderingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F365D245A061400C9E797 /* CoffeOrderingAppUITests.swift */; };
+		BF0F366D245A070800C9E797 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F366C245A070800C9E797 /* Coffee.swift */; };
+		BF0F366F245A07C300C9E797 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F366E245A07C300C9E797 /* Order.swift */; };
+		BF4F6C67245A316A00DE2C4A /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F6C66245A316A00DE2C4A /* CreateOrderResponse.swift */; };
+		BFD39AA1245A18930082007E /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD39AA0245A18930082007E /* Webservice.swift */; };
+		BFD39AA4245A1C660082007E /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD39AA3245A1C660082007E /* OrderListViewModel.swift */; };
+		BFD39AA6245A1C960082007E /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD39AA5245A1C960082007E /* OrderViewModel.swift */; };
+		BFD39AA9245A228C0082007E /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD39AA8245A228C0082007E /* OrderListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		BF0F3659245A061400C9E797 /* CoffeOrderingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeOrderingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0F365D245A061400C9E797 /* CoffeOrderingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeOrderingAppUITests.swift; sourceTree = "<group>"; };
 		BF0F365F245A061400C9E797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0F366C245A070800C9E797 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		BF0F366E245A07C300C9E797 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		BF4F6C66245A316A00DE2C4A /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
+		BFD39AA0245A18930082007E /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		BFD39AA3245A1C660082007E /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		BFD39AA5245A1C960082007E /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		BFD39AA8245A228C0082007E /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,12 @@
 		BF0F363A245A061300C9E797 /* CoffeOrderingApp */ = {
 			isa = PBXGroup;
 			children = (
+				BFD39AA7245A1FAE0082007E /* Views */,
+				BFD39AA2245A1C510082007E /* ViewModels */,
+				BFD39A9F245A18860082007E /* Services */,
+				BF0F366B245A06F700C9E797 /* Models */,
 				BF0F363B245A061300C9E797 /* AppDelegate.swift */,
 				BF0F363D245A061300C9E797 /* SceneDelegate.swift */,
-				BF0F363F245A061300C9E797 /* ContentView.swift */,
 				BF0F3641245A061400C9E797 /* Assets.xcassets */,
 				BF0F3646245A061400C9E797 /* LaunchScreen.storyboard */,
 				BF0F3649245A061400C9E797 /* Info.plist */,
@@ -134,6 +151,42 @@
 				BF0F365F245A061400C9E797 /* Info.plist */,
 			);
 			path = CoffeOrderingAppUITests;
+			sourceTree = "<group>";
+		};
+		BF0F366B245A06F700C9E797 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F366C245A070800C9E797 /* Coffee.swift */,
+				BF0F366E245A07C300C9E797 /* Order.swift */,
+				BF4F6C66245A316A00DE2C4A /* CreateOrderResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFD39A9F245A18860082007E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BFD39AA0245A18930082007E /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BFD39AA2245A1C510082007E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BFD39AA3245A1C660082007E /* OrderListViewModel.swift */,
+				BFD39AA5245A1C960082007E /* OrderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BFD39AA7245A1FAE0082007E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFD39AA8245A228C0082007E /* OrderListView.swift */,
+				BF0F363F245A061300C9E797 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +321,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0F363C245A061300C9E797 /* AppDelegate.swift in Sources */,
+				BF4F6C67245A316A00DE2C4A /* CreateOrderResponse.swift in Sources */,
 				BF0F363E245A061300C9E797 /* SceneDelegate.swift in Sources */,
+				BFD39AA9245A228C0082007E /* OrderListView.swift in Sources */,
+				BFD39AA1245A18930082007E /* Webservice.swift in Sources */,
+				BF0F366F245A07C300C9E797 /* Order.swift in Sources */,
+				BFD39AA4245A1C660082007E /* OrderListViewModel.swift in Sources */,
 				BF0F3640245A061300C9E797 /* ContentView.swift in Sources */,
+				BF0F366D245A070800C9E797 /* Coffee.swift in Sources */,
+				BFD39AA6245A1C960082007E /* OrderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
