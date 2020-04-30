@@ -13,7 +13,6 @@ class Webservice {
     func createCoffeeOrder(order: Order, completion: @escaping(CreateOrderResponse?)->Void) {
         guard let url: URL = URL(string: "https://island-bramble.glitch.me/orders") else {
             fatalError("Invalid URL")
-            return
         }
 
         var urlrequest: URLRequest = URLRequest(url: url)
@@ -24,6 +23,15 @@ class Webservice {
         URLSession.shared.dataTask(with: urlrequest) { (data: Data?, response: URLResponse?, error: Error?) in
             guard let aData: Data = data, error == nil else {
                 return
+            }
+            if let createOrderResponse: CreateOrderResponse = try? JSONDecoder().decode(CreateOrderResponse.self, from: aData) {
+                DispatchQueue.main.async {
+                    completion(createOrderResponse)
+                }
+            } else {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
             }
         }.resume()
     }

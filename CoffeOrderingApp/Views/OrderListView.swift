@@ -52,6 +52,7 @@ struct OrderListView: View {
                                                             trailing: 10))
                                         .background(Color.blue)
                                         .foregroundColor(Color.white)
+                                    .cornerRadius(10)
                                 }
                             }
                         }

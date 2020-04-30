@@ -18,6 +18,10 @@
 		BF0F366D245A070800C9E797 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F366C245A070800C9E797 /* Coffee.swift */; };
 		BF0F366F245A07C300C9E797 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F366E245A07C300C9E797 /* Order.swift */; };
 		BF4F6C67245A316A00DE2C4A /* CreateOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4F6C66245A316A00DE2C4A /* CreateOrderResponse.swift */; };
+		BF5ACB7B245A63ED00A572C8 /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ACB7A245A63ED00A572C8 /* AddCoffeeOrderViewModel.swift */; };
+		BF5ACB7D245A66CB00A572C8 /* CoffeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ACB7C245A66CB00A572C8 /* CoffeeViewModel.swift */; };
+		BF5ACB7F245A6EF900A572C8 /* AddCoffeeOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ACB7E245A6EF900A572C8 /* AddCoffeeOrderView.swift */; };
+		BF5ACB81245A7E4100A572C8 /* OrderTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ACB80245A7E4100A572C8 /* OrderTotalView.swift */; };
 		BFD39AA1245A18930082007E /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD39AA0245A18930082007E /* Webservice.swift */; };
 		BFD39AA4245A1C660082007E /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD39AA3245A1C660082007E /* OrderListViewModel.swift */; };
 		BFD39AA6245A1C960082007E /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD39AA5245A1C960082007E /* OrderViewModel.swift */; };
@@ -59,6 +63,10 @@
 		BF0F366C245A070800C9E797 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		BF0F366E245A07C300C9E797 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		BF4F6C66245A316A00DE2C4A /* CreateOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderResponse.swift; sourceTree = "<group>"; };
+		BF5ACB7A245A63ED00A572C8 /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
+		BF5ACB7C245A66CB00A572C8 /* CoffeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewModel.swift; sourceTree = "<group>"; };
+		BF5ACB7E245A6EF900A572C8 /* AddCoffeeOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderView.swift; sourceTree = "<group>"; };
+		BF5ACB80245A7E4100A572C8 /* OrderTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTotalView.swift; sourceTree = "<group>"; };
 		BFD39AA0245A18930082007E /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		BFD39AA3245A1C660082007E /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 		BFD39AA5245A1C960082007E /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
@@ -176,6 +184,8 @@
 			children = (
 				BFD39AA3245A1C660082007E /* OrderListViewModel.swift */,
 				BFD39AA5245A1C960082007E /* OrderViewModel.swift */,
+				BF5ACB7A245A63ED00A572C8 /* AddCoffeeOrderViewModel.swift */,
+				BF5ACB7C245A66CB00A572C8 /* CoffeeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,6 +195,8 @@
 			children = (
 				BFD39AA8245A228C0082007E /* OrderListView.swift */,
 				BF0F363F245A061300C9E797 /* ContentView.swift */,
+				BF5ACB7E245A6EF900A572C8 /* AddCoffeeOrderView.swift */,
+				BF5ACB80245A7E4100A572C8 /* OrderTotalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,12 +335,16 @@
 				BF0F363C245A061300C9E797 /* AppDelegate.swift in Sources */,
 				BF4F6C67245A316A00DE2C4A /* CreateOrderResponse.swift in Sources */,
 				BF0F363E245A061300C9E797 /* SceneDelegate.swift in Sources */,
+				BF5ACB7B245A63ED00A572C8 /* AddCoffeeOrderViewModel.swift in Sources */,
+				BF5ACB7D245A66CB00A572C8 /* CoffeeViewModel.swift in Sources */,
 				BFD39AA9245A228C0082007E /* OrderListView.swift in Sources */,
 				BFD39AA1245A18930082007E /* Webservice.swift in Sources */,
+				BF5ACB7F245A6EF900A572C8 /* AddCoffeeOrderView.swift in Sources */,
 				BF0F366F245A07C300C9E797 /* Order.swift in Sources */,
 				BFD39AA4245A1C660082007E /* OrderListViewModel.swift in Sources */,
 				BF0F3640245A061300C9E797 /* ContentView.swift in Sources */,
 				BF0F366D245A070800C9E797 /* Coffee.swift in Sources */,
+				BF5ACB81245A7E4100A572C8 /* OrderTotalView.swift in Sources */,
 				BFD39AA6245A1C960082007E /* OrderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
